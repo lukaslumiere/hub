@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { books } from "@/data/books";
-import { journey } from "@/data/journey";
 import { fetchLatestPosts } from "@/services/notion/posts";
 import { Footer } from "../components/layout/Footer";
 
@@ -61,16 +60,6 @@ export default async function Home() {
                 - <span className="underline">{book.title}</span>
               </Link>{" "}
               {book.note && `(${book.note})`}
-            </div>
-          ))}
-        </div>
-      </section>
-      <section className="flex flex-col gap-2">
-        <h1>what i've been up to</h1>
-        <div className="flex flex-col gap-1">
-          {journey.map((journey) => (
-            <div className="flex items-center gap-3" key={journey.role}>
-              {journey.start}-{journey.end}: {journey.role}
             </div>
           ))}
         </div>
