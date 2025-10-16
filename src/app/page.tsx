@@ -14,16 +14,26 @@ export default async function Home() {
       <section>
         <div className="flex flex-col gap-1">
           <div>
-            <Link href="https://x.com/lukaslumiere" target="_blank">
+            <Link
+              href="https://x.com/lukaslumiere"
+              target="_blank"
+              className="inline"
+            >
               <span className="underline">https://www.x.com/lukaslumiere</span>
             </Link>{" "}
             (find me here)
           </div>
-          <Link href="https://github.com/lukaslumiere" target="_blank">
-            <span className="underline">
-              https://www.github.com/lukaslumiere
-            </span>
-          </Link>
+          <div>
+            <Link
+              href="https://github.com/lukaslumiere"
+              target="_blank"
+              className="inline"
+            >
+              <span className="underline">
+                https://www.github.com/lukaslumiere
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="flex flex-col gap-2">
