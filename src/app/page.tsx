@@ -4,6 +4,8 @@ import { journey } from "@/data/journey";
 import { fetchLatestPosts } from "@/services/notion/posts";
 import { Footer } from "../components/layout/Footer";
 
+export const revalidate = 60
+
 export default async function Home() {
   const posts = await fetchLatestPosts();
   return (
