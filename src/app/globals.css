@@ -6,6 +6,7 @@
   --breakpoint-tablet: 45rem;
   --breakpoint-laptop: 55rem;
   --breakpoint-desktop: 60rem;
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
 body {
