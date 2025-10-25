@@ -46,7 +46,7 @@ export default async function Page({
         {readingTime} · {formatDate(createdTime)}
       </h3>
       <div
-        className="prose prose-headings:text-black prose-a:text-black prose-p:text-black prose-h3:font-medium max-w-full"
+        className="prose prose-headings:text-neutral-300 prose-a:text-neutral-300 prose-p:text-neutral-300 prose-h3:font-medium max-w-full"
         // biome-ignore lint/security/noDangerouslySetInnerHtml: sanitized html from notion renderer
         dangerouslySetInnerHTML={{ __html: htmlWithBlankLinks }}
       />

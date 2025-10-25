@@ -10,5 +10,5 @@
 }
 
 body {
-  @apply bg-white text-black
+  @apply bg-[#0d0d0d] text-[#d4d4d4];
 }

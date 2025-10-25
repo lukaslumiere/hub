@@ -3,7 +3,7 @@ import { books } from "@/data/books";
 import { fetchLatestPosts } from "@/services/notion/posts";
 import { Footer } from "../components/layout/Footer";
 
-export const revalidate = 60
+export const revalidate = 60;
 
 export default async function Home() {
   const posts = await fetchLatestPosts();
